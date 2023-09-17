@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2006-2023, RT-Thread Development Team
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Change Logs:
+ * Date           Author       Notes
+ * 2023-09-14     RT-Thread    first version
+ */
+
+#include <rtthread.h>
+#include <rtdevice.h>
+#include <drv_common.h>
+
+#define BEEF_PIN GET_PIN(A,5)
+#define KEY1_PIN GET_PIN(A,0)
+
+
+void beep_on(void *args)
+{
+    if(PIN_LOW==rt_pin_read(KEY1_PIN))
+    {
+        rt_pin_write(BEEF_PIN,PIN_LOW);
+        while(PIN_LOW==rt_pin_read(KEY1_PIN));
+        rt_pin_write(BEEF_PIN,PIN_HIGH);
+    }
+}
+
+
+
+int main(void)
+{
+    rt_pin_mode(BEEF_PIN, PIN_MODE_OUTPUT);
+    rt_pin_mode(KEY1_PIN, PIN_MODE_INPUT_PULLUP);
+
+    rt_pin_write(BEEF_PIN,PIN_HIGH);
+    rt_pin_attach_irq(KEY1_PIN, PIN_IRQ_MODE_FALLING, beep_on, RT_NULL);
+    rt_pin_irq_enable(KEY1_PIN, PIN_IRQ_ENABLE);
+    
+    return RT_EOK;
+}
