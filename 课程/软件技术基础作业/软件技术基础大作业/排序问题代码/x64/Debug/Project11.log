@@ -1,0 +1,19 @@
+﻿  Ssort.cpp
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.h(30,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“Ssort.cpp”)
+  
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.h(68,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“Ssort.cpp”)
+  
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.h(113,13): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  (编译源文件“Ssort.cpp”)
+  
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(34,53): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(41,53): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(49,53): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(56,53): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(11,13): warning C4101: “endTime3”: 未引用的局部变量
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(7,13): warning C4101: “endTime1”: 未引用的局部变量
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(6,13): warning C4101: “startTime1”: 未引用的局部变量
+C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\Ssort.cpp(10,13): warning C4101: “startTime3”: 未引用的局部变量
+  Project11.vcxproj -> C:\研一上学期\-\课程\软件技术基础作业\软件技术基础大作业\Project11\x64\Debug\Project11.exe
